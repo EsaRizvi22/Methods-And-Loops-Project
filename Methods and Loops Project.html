@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Methods and Loops Project</title>
+</head>
+
+<body>
+    <h2>Methods and Loops Project</h2>
+
+    <div id="output"></div>
+
+    <script>
+        // Generate a random set of numbers
+        const randomNumbers = Array.from({ length: 5 }, () => Math.floor(Math.random() * 100));
+
+        // Generate a single random rounded number
+        const randomRounded = Math.round(Math.random() * 100);
+
+        // Specified date
+        const date = new Date('2024-10-20').toDateString();
+
+        // Display results
+        document.getElementById("output").innerHTML = `
+            <p>Random Set of Numbers: ${randomNumbers.join(", ")}</p>
+            <p>Random Rounded Number: ${randomRounded}</p>
+            <p>Specified Date: ${date}</p>
+        `;
+    </script>
+</body>
